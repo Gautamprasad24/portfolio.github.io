@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="portfolio.js"></script>
+    <script src="https://kit.fontawesome.com/d370b7c726.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="logo1.png" alt="">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio </a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hi ">
+           
+        </div>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Gautam Prasad</span> <br> From India</h1>
+        </div>
+    <!-- --------about------- -->
+        <div id="about">
+            <div class="continer1">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="about1.jpeg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsa voluptates, dolorem dolor provident magnam numquam, commodi possimus expedita repellat quae, aperiam id voluptatibus? Asperiores, quis doloribus, eum ratione enim illo placeat amet ipsa magnam harum minima quod facilis libero! .</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links "onclick="opentab('Experience') " >Experience</p>
+                            <p class="tab-links " onclick="opentab('Education') ">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Developer</span><br>Web App Developer</li>
+                                <li><span>App Development</span><br>Building Android/ios Devices</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2022</span><br>Intern as a Web Developer</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2020</span><br>SSC from St.Agnes Englis High English School</li>
+                                <li><span>2022</span><br>HSC from R.D National</li>
+                                <li><span>2023</span><br>FY-BSC-IT From Lorrds College</li>
+                                <li><span>2024</span><br>SY-BSC-IT From Abhinav College</li>
+                            </ul>
+                        </div>
+                      
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------services------------------------------------- -->
+    <div id="services">
+        <div class="container2">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                    <div >
+                        <i class="fa-solid fa-code"></i>
+                        <h2 >Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Neque, distinctio?</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2 class="2">App Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Neque, distinctio?</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i> 
+                        <h2 class="3">Software Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Neque, distinctio?</p>
+                        <a href="#">Learn More</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------------------------------Portfolio------------------------------------------------------ -->
+
+    <div id="portfolio">
+        <div class="container4">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="1.jpeg" >
+                    <div class="layer">
+                        <h3>Webite Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, hic aliquam. <br>Maxime quas ipsam delectus quaerat optio aliquid iure,<br> perspiciatis dolore itaque quasi porro omnis laudantium.<br> Similique sint corrupti unde sed in earum iure.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="6.jpg" >
+                    <div class="layer">
+                        <h3>Interior Designing App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, hic aliquam.<br> Maxime quas ipsam delectus quaerat optio aliquid iure, <br>perspiciatis dolore itaque quasi porro omnis laudantium.<br> Similique sint corrupti unde sed in earum iure.</p>
+                        <a href="interior/interior.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div><br>
+                </div>
+                <div class="work">
+                    <img src="3.jpeg" >
+                    <div class="layer">
+                        <h3>Iphone Mobile store</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, hic aliquam.<br> Maxime quas ipsam delectus quaerat optio aliquid iure,<br> perspiciatis dolore itaque quasi porro omnis laudantium. <br>Similique sint corrupti unde sed in earum iure.</p>
+                        <a href="youtube website/index.html" target="_blank"><i class="fa-solid fa-up-right-from-square" ></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <script>
+            
+        
+    </script>
+</body>
+</html> 
