@@ -150,6 +150,10 @@ nav ul li a:hover::after{
 .tab-contents{
     display:none;
 }
+#Experience a
+{
+    color:#fff;
+}
 .tab-contents.active-tab{
     display:block;
 }
