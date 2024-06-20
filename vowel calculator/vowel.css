@@ -1,0 +1,89 @@
+body
+{
+    font-family: sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(to right, #33001b,#ff0084)
+}
+.container
+{
+    background-color: rgba(247, 85, 10, 0.918);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    animation: gautam 1s infinite alternate;
+}
+@keyframes gautam
+{
+    from
+    {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    to
+    {
+        box-shadow: 0px 0px 20px #e6df13, 0px 0px 30px #eb4f05, 0px 0px 40px #ffd300
+    }
+}
+h1{
+    color:#ffffff;
+    font-size:36px;
+    margin-bottom:20px;
+}
+textarea
+{
+    width:500px;
+    height:300px;
+    margin:10px auto;
+    display: block;
+    font-size: 24px;
+    padding:20px;
+    color:rgb(0,0,0);
+    border:1px solid #dddddd;
+    border-radius:5px;
+    resize:none;
+    animation:gautam1 1s ease;
+}
+@keyframes gautam1
+{
+    from
+    {
+        opacity: 0;
+        transform: translate(-20px);
+    }
+    to
+    {
+        opacity: 1;
+        transform:translate(0);
+    }
+}
+button{
+    padding:15px 30px;
+    background-color: #10b1f0;
+    width:500px;
+    color:#fff;
+    border:none;
+    border-radius:16px;
+    font-weight:bold;
+    text-transform: uppercase;
+    cursor:pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover
+{
+    background-color: #33022b;
+}
+#result
+{
+    font-size:20px;
+    margin-top:20px;
+    color:azure;
+    font-weight:bold;
+    animation: gautam 1s infinite alternate;
+    
+}

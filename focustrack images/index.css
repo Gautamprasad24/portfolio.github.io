@@ -1,0 +1,265 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* #114DB2,#7D5FD0 */
+    background: linear-gradient(to right, #114DB2  ,#BC6AE2);
+    height:100vh;
+    width:100vw;
+    
+}
+.wel
+{
+    position: relative;
+    font-size: 35px;
+    top:-20px;
+    font-weight: bold;
+    color:#370466;
+}
+.circle1
+{
+    position: absolute;
+    height:100px;
+    width:100px;
+    background-color: #D1941B;
+    border-radius:50%;
+    top:100px;
+    left:250px;
+}
+
+.circle2
+{
+    position: absolute;
+    height:100px;
+    width:100px;
+    background-color:#2C0572 ;
+    border-radius:50%;
+    top:-30px;
+    left:80px;
+}
+.circle3
+{
+    
+    position: absolute;
+    height:150px;
+    width:150px;
+    background-color: #D1941B;
+    border-radius:50%;
+    top:220px;
+    left:50px;
+}
+.circle4
+{
+    position: absolute;
+    height:150px;
+    width:150px;
+    background-color: #2C0572;
+    border-radius:50%;
+    top:450px;
+    left:150px;
+}
+.circle5
+{
+    position: absolute;
+    height:50px;
+    width:50px;
+    background-color: #2C0572;
+    border-radius:50%;
+    top:300px;
+    left:250px;
+}
+.circle6
+{
+    position: absolute;
+    height:100px;
+    width:100px;
+    background-color: #D1941B;
+    border-radius:50%;
+    top:100px;
+    right:250px;
+}
+
+.circle7
+{
+    position: absolute;
+    height:100px;
+    width:100px;
+    background-color:#2C0572 ;
+    border-radius:50%;
+    top:-30px;
+    right:200px;
+}
+.circle8
+{
+    
+    position: absolute;
+    height:150px;
+    width:150px;
+    background-color: #D1941B;
+    border-radius:50%;
+    top:220px;
+    right:50px;
+}
+.circle9
+{
+    position: absolute;
+    height:150px;
+    width:150px;
+    background-color: #2C0572;
+    border-radius:50%;
+    top:450px;
+    right:150px;
+}
+.circle10
+{
+    position: absolute;
+    height:50px;
+    width:50px;
+    background-color: #2C0572;
+    border-radius:50%;
+    top:300px;
+    right:250px;
+}
+.circle11
+{
+    position: absolute;
+    height:150px;
+    width:150px;
+    background-color: #2C0572;
+    border-radius:50%;
+    top:0px;
+    left:500px;
+}
+.circle12
+{
+    position: absolute;
+    height:150px;
+    width:150px;
+    /* background-color: #2C0572; */
+    border:25px solid #D1941B;
+    border-radius:50%;
+    bottom:-80px;
+    left:600px;
+}
+.circle13
+{
+    position: absolute;
+    height:150px;
+    width:150px;
+    
+    /* background-color: #2C0572; */
+    border:25px solid#2C0572;
+    border-radius:50%;
+    top:-60px;
+    right:-50px;
+}
+.circle14
+{
+    position: relative;
+    height:50px;
+    width:50px;
+    background-color: #2C0572;
+    border-radius:50%;
+    top:470px;
+    left:370px;
+}
+.container{
+    position: absolute;
+    height:500px;
+    width: 400px;
+    border: 2px solid white;
+    left:450px;
+    top:70px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+form h2{
+    text-align: center;
+}
+form{
+    padding: 20px;
+
+}
+.inputs
+{
+    position:relative;
+    top:30px;
+    left:50px;
+}
+.password
+{
+    position: relative;
+    top:30px;
+    
+
+}
+input{
+    height:40px;
+    width: 250px;
+    border-radius: 30px;
+    border: none;
+
+}
+.remember
+{
+    position: relative;
+    top:80px;
+    left:20px;
+    color:#730781;
+    font-weight: bolder;
+    
+}
+.forgetpassword
+{
+    position: relative;
+    top:80px;
+    left:40px;
+    color:#730781;
+    font-weight: bolder;
+
+}
+.checkbox
+{
+    position: relative;
+    height:20px;
+    width:20px;
+    top: 85px;
+    left: 15px;
+}
+.login-btn
+{
+    position: relative;
+    top:130px;
+    left:30px;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #370466;
+    color: #fff;
+}
+.account
+{
+    position: relative;
+    top:150px;
+    left:50px;
+    color: #730781;
+    font-weight: bolder;
+}
+.Sign
+{
+    position: relative;
+    top:150px;
+    left:80px;
+    color: #730781;
+    font-weight: bolder;
+    
+}

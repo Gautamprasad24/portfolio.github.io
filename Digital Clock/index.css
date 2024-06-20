@@ -1,0 +1,33 @@
+@font-face {
+    font-family: customfont;
+    src: url('digital-7.ttf');
+}
+
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+   
+}
+
+body
+{
+    background:rgb(30, 81, 221);
+    font-family: customfont;
+}
+.clock
+{
+    position:absolute;
+    color:black;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    font-size: 60px;
+    letter-spacing: 7px;
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+}
+

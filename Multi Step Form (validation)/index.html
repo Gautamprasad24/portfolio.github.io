@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+           
+            <form >
+                <h1>Fill The Form</h1>
+                <div class="step step-1 active">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text"  id="name" name="name">  
+                            </div>
+                            <div class="form-group">
+                                <label for="lname">Last Name</label>
+                                <input type="text"  id="lname" name="lname">  
+                            </div>
+                            <button type="button" class="next-btn">Next</button>
+                </div>
+                <!-- Second  -->
+                <div class="step step-2 ">
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="text"  id="email" name="email">  
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text"  id="phone" name="phone">  
+                    </div>
+                    <button type="button" class="prev-btn">Previous</button>
+                    <button type="button" class="next-btn">Next</button>
+                </div>
+                <!-- Third -->
+                <div class="step step-3 ">
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text"  id="country" name="country">  
+                    </div>
+                    <div class="form-group">
+                        <label for="city">city</label>
+                        <input type="text"  id="city" name="city">  
+                    </div>
+                    <button type="button" class="prev-btn">Previous</button>
+                    <button type="submit" class="next-btn">Submit</button>
+                </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
