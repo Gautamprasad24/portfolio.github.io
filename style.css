@@ -150,10 +150,6 @@ nav ul li a:hover::after{
 .tab-contents{
     display:none;
 }
-#Experience a
-{
-    color:#fff;
-}
 .tab-contents.active-tab{
     display:block;
 }
@@ -303,7 +299,7 @@ nav ul li a:hover::after{
     border-radius:6px;
     text-decoration: none;
     color:#fff;
-    transition:background 0.5s;
+    transition: 0.5s;
 }
 .btn:hover{
         
@@ -312,77 +308,11 @@ nav ul li a:hover::after{
 
 
 
-
-/* Default styles */
-
-/* Media query for tablets and smaller devices */
-@media (max-width: 768px) {
-    /* Adjust container padding, font sizes, etc. */
-    .container {
-        padding: 20px;
-    }
-    /* Adjust navigation menu for smaller screens */
-    nav {
+       @media (max-width: 768px) {
+    .about-col-1, .about-col-2 {
+ 	width: 253%;
         text-align: center;
-        padding-top: 10px;
-    }
-    nav img {
-        width: 80px; /* Adjust logo size */
-    }
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 0;
-    }
-    nav ul li {
-        margin: 0;
-    }
-    /* Adjust header text */
-    .header-text {
-        text-align: center;
-        margin-top: 20px;
-    }
-    .header-text h1 {
-        font-size: 1.5rem; /* Adjust font size */
-    }
-    /* Adjust about section columns */
-    .about-col-1,
-    .about-col-2 {
-        width: 100%;
-        text-align: center;
-    }
-    .about-col-1 img {
-        width: 100%; /* Make image responsive */
-    }
-    /* Adjust tab content layout */
-    .tab-titles {
-        display: flex;
-        justify-content: space-around;
-    }
-    .tab-contents {
-        padding: 10px;
-    }
-    /* Adjust services section */
-    .services-list {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    /* Adjust portfolio section */
-    .work-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    .work {
-        width: 100%;
-    }
-    .work img {
-        width: 100%;
-    }
-    .layer {
-        padding: 10px;
-    }
+        left: 34px;
+        position: relative;
 }
 
