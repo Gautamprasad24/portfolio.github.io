@@ -5,148 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="portfolio.js"></script>
+    <script src="portfolio.js" defer></script>
     <script src="https://kit.fontawesome.com/d370b7c726.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <nav>
-            <img src="logo1.png" alt="">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
+            <img src="logo1.png" alt="Logo">
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio </a></li>
+                <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <div class="hi ">
-           
+        <div class="header-container">
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Gautam Prasad</span><br>From India</h1>
+            </div>
+            <img src="myphoto1.png" alt="Gautam Prasad" class="header-image">
         </div>
-        <div class="header-text">
-            <p>Web Developer</p>
-            <h1>Hi, I'm <span>Gautam Prasad</span> <br> From India</h1>
-        </div>
-    <!-- --------about------- -->
+        <!-- About Section -->
         <div id="about">
-            <div class="continer1">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="about1.jpeg" alt="">
+            <div class="about-container">
+                <h1 class="sub-title">About Me</h1>
+                <img src="about1.jpeg" alt="About Gautam Prasad" class="about-image">
+                <div class="about-content">
+                    <div class="about-text-wrapper">
+                        <p class="about-text">Hi, I’m Gautam Prasad, a dedicated web developer based in India. With a passion for creating impactful digital solutions, I specialize in building responsive and user-friendly websites. My expertise spans a wide range of technologies, and I’m committed to delivering high-quality projects that meet client needs. I thrive on challenges and continuously strive to enhance my skills to stay at the forefront of the ever-evolving tech landscape.</p>
+                        <button class="read-more-btn" onclick="toggleReadMore()">Read More</button>
                     </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsa voluptates, dolorem dolor provident magnam numquam, commodi possimus expedita repellat quae, aperiam id voluptatibus? Asperiores, quis doloribus, eum ratione enim illo placeat amet ipsa magnam harum minima quod facilis libero! .</p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links "onclick="opentab('Experience') " >Projects</p>
-                            <p class="tab-links " onclick="opentab('Education') ">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Full-Stack Developer</span><br>Front-End Developer<br> Back-End Developer</li>
-                                <li><span>Language Specific Knowledge</span><br>Java<pre>Python</pre><pre>.Net</pre><pre>C</pre><pre>C++</pre><pre>C#</pre></li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="Experience">
-                            <ul>
-                                
-                                
-                               <li> <a href="https://gautamprasad24.github.io/cabservice/" target="_blank">Taxi Sevices</a></li>
-                                <li> <a href="https://gautamprasad24.github.io/dashboard/" target="_blank">DashBoard</a></li>
-                                <li> <a href="https://gautamprasad24.github.io/WeatherApp/" target="_blank">Weather Application</a></li>
-                                <li> <a href="https://gautamprasad24.github.io/Bank/" target="_blank">Banking Management System</a></li>
-                                <li> <a href="https://gautamprasad24.github.io/Multistepform/" target="_blank">MultiStep Form</a></li>
-                                
-                                <li> <a href="https://gautamprasad24.github.io/Stopwatch/" target="_blank">StopWatch</a></li>
-                             
-                                <li> <a href="https://gautamprasad24.github.io/calculator/" target="_blank">Calculator</a></li>
-                               
-                                <li> <a href="https://gautamprasad24.github.io/Digitalclock/" target="_blank">Digital Clock</a></li>
-                                
-                                
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="Education">
-                            <ul>
-                                <li><span>2020</span><br>SSC from St.Agnes English High English School<span><pre>SSC:- 78% </pre></span></li>
-                                <li><span>2022</span><br>HSC from R.D National<span><pre>HSC :- 77%</pre></span></li>
-                                <li><span>2023</span><br>FY-BSC-IT From Lorrds College<span><pre> Sem1 :- 7.2 SGPA </pre></span><span> <pre>& Sem2 :- 8.2 SGPA</pre></span></li>
-                                <li><span>2024</span><br>SY-BSC-IT From Abhinav College<span><pre>Sem3 :- 7.9 SGPA </pre></span><span> <pre>Sem4 :- 9.2 SGPA</pre></span></li>
-                                <li><span>2025</span><br>TY-BSC-IT From Abhinav College<span><pre>Sem5 :- 8.9 SGPA </pre></span><span><pre> Sem6 :- Not Yet Announced</pre></span></li>
-                                
-                            </ul>
-                        </div>
-                      
-                </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full-Stack Developer</span><br>Front-End Developer<br>Back-End Developer</li>
+                            <li><span>Language Specific Knowledge</span><br>Java<br>Python<br>.Net<br>C<br>C++<br>C#</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><a href="https://gautamprasad24.github.io/cabservice/" target="_blank">Taxi Services</a></li>
+                            <li><a href="https://gautamprasad24.github.io/dashboard/" target="_blank">DashBoard</a></li>
+                            <li><a href="https://gautamprasad24.github.io/WeatherApp/" target="_blank">Weather Application</a></li>
+                            <li><a href="https://gautamprasad24.github.io/Bank/" target="_blank">Banking Management System</a></li>
+                            <li><a href="https://gautamprasad24.github.io/Multistepform/" target="_blank">MultiStep Form</a></li>
+                            <li><a href="https://gautamprasad24.github.io/Stopwatch/" target="_blank">StopWatch</a></li>
+                            <li><a href="https://gautamprasad24.github.io/calculator/" target="_blank">Calculator</a></li>
+                            <li><a href="https://gautamprasad24.github.io/Digitalclock/" target="_blank">Digital Clock</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020</span><br>SSC from St.Agnes English High English School<br>SSC: 78%</li>
+                            <li><span>2022</span><br>HSC from R.D National<br>HSC: 77%</li>
+                            <li><span>2023</span><br>FY-BSC-IT From Lorrds College<br>Sem1: 7.2 SGPA<br>Sem2: 8.2 SGPA</li>
+                            <li><span>2024</span><br>SY-BSC-IT From Abhinav College<br>Sem3: 7.9 SGPA<br>Sem4: 9.2 SGPA</li>
+                            <li><span>2025</span><br>TY-BSC-IT From Abhinav College<br>Sem5: 8.9 SGPA<br>Sem6: Not Yet Announced</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- -----------------------services------------------------------------- -->
-    <div id="services">
-        <div class="container2">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                    <div >
+        <!-- Services Section -->
+        <div id="services">
+            <div class="container2">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
                         <i class="fa-solid fa-code"></i>
-                        <h2 >Web Design</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Neque, distinctio?</p>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, distinctio?</p>
                         <a href="#">Learn More</a>
                     </div>
                     <div>
                         <i class="fa-solid fa-crop"></i>
-                        <h2 class="2">App Developer</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Neque, distinctio?</p>
+                        <h2>App Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, distinctio?</p>
                         <a href="#">Learn More</a>
                     </div>
                     <div>
-                        <i class="fa-brands fa-app-store"></i> 
-                        <h2 class="3">Software Developer</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Neque, distinctio?</p>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Software Developer</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, distinctio?</p>
                         <a href="#">Learn More</a>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Section -->
+        <div id="portfolio">
+            <div class="container4">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="1.jpeg" alt="Website Design">
+                        <div class="layer">
+                            <h3>Website Design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, hic aliquam. Maxime quas ipsam delectus quaerat optio aliquid iure, perspiciatis dolore itaque quasi porro omnis laudantium. Similique sint corrupti unde sed in earum iure.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="6.jpg" alt="Interior Designing App">
+                        <div class="layer">
+                            <h3>Interior Designing App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, hic aliquam. Maxime quas ipsam delectus quaerat optio aliquid iure, perspiciatis dolore itaque quasi porro omnis laudantium. Similique sint corrupti unde sed in earum iure.</p>
+                            <a href="interior/interior.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="3.jpeg" alt="Iphone Mobile Store">
+                        <div class="layer">
+                            <h3>Iphone Mobile Store</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, hic aliquam. Maxime quas ipsam delectus quaerat optio aliquid iure, perspiciatis dolore itaque quasi porro omnis laudantium. Similique sint corrupti unde sed in earum iure.</p>
+                            <a href="youtube website/index.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
             </div>
         </div>
     </div>
-    <!-- --------------------------------------------------------------Portfolio------------------------------------------------------ -->
 
-    <div id="portfolio">
-        <div class="container4">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="1.jpeg" >
-                    <div class="layer">
-                        <h3>Webite Design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, hic aliquam. <br>Maxime quas ipsam delectus quaerat optio aliquid iure,<br> perspiciatis dolore itaque quasi porro omnis laudantium.<br> Similique sint corrupti unde sed in earum iure.</p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="6.jpg" >
-                    <div class="layer">
-                        <h3>Interior Designing App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, hic aliquam.<br> Maxime quas ipsam delectus quaerat optio aliquid iure, <br>perspiciatis dolore itaque quasi porro omnis laudantium.<br> Similique sint corrupti unde sed in earum iure.</p>
-                        <a href="interior/interior.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div><br>
-                </div>
-                <div class="work">
-                    <img src="3.jpeg" >
-                    <div class="layer">
-                        <h3>Iphone Mobile store</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, hic aliquam.<br> Maxime quas ipsam delectus quaerat optio aliquid iure,<br> perspiciatis dolore itaque quasi porro omnis laudantium. <br>Similique sint corrupti unde sed in earum iure.</p>
-                        <a href="youtube website/index.html" target="_blank"><i class="fa-solid fa-up-right-from-square" ></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">See More</a>
-        </div>
-    </div>
     <script>
-            
-        
+        function toggleReadMore() {
+            const aboutText = document.querySelector('.about-text');
+            const readMoreBtn = document.querySelector('.read-more-btn');
+            if (aboutText.classList.contains('expanded')) {
+                aboutText.classList.remove('expanded');
+                readMoreBtn.textContent = 'Read More';
+            } else {
+                aboutText.classList.add('expanded');
+                readMoreBtn.textContent = 'Read Less';
+            }
+        }
     </script>
 </body>
-</html> 
+</html>
